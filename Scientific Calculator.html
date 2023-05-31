@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <link rel="icon" type="image/png" href=""/> -->
+        <title>Scientific Calculator </title>
+        <link rel="stylesheet" href="Calculator.css">
+    </head>
+
+    <body>
+        <script src= "Scientific.js"> </script>
+
+        <table class="calculator table">
+            <thead>			
+                <tr>
+                    <td colspan=7>
+                        <div class="output">
+                            <input type="text" id="display">
+                        </div>				
+                    </td>
+                </tr>
+            </thead>
+            <tbody class="actions">		
+                <tr>
+                    <td colspan=3></td>
+                    <td>
+                        <button class="btn btn-op" data-value='*(' onclick= "display('(')">(</button>				
+            
+                    </td>
+                    <td>
+                        <button class="btn btn-op" data-value=')'  onclick= "display(')')">)</button>				
+            
+                    </td>
+                    <td>
+                        <button class="btn btn-op" data-value='%' onclick= "display('%')">%</button>			
+            
+                    </td>
+                    <td>
+                        <button class="btn btn-op" data-value='ce' onclick= "CE()">CE</button>				
+            
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn btn-op" data-value='del' onclick= "del()">DEL</button>				
+                    </td>
+                    <td>
+                        <button class="btn btn-op" data-value='sin(' onclick= "display('sin(')">sin</button>			
+                    </td>
+                    <td>
+                        <button class="btn btn-op" data-value='ln' onclick= "display('ln(')">ln</button>				
+                    </td>
+                    <td>
+                        <button class="btn" data-value='7' onclick= "display('7')">7</button>
+                    </td>
+                    <td>
+                        <button class="btn" data-value='8' onclick= "display('8')">8</button>				
+                    </td>
+                    <td>
+                        <button class="btn" data-value='9' onclick= "display('9')">9</button>				
+                    </td>
+                    <td>
+                        <button class="btn btn-op" data-value='/' onclick= "display('/')">÷</button>				
+            
+                    </td>
+                </tr>			
+                <tr>
+                    <td>
+                        <button class="btn btn-op" data-value='3.14' onclick= "display('π')">π</button>				
+                    </td>
+                    <td>
+                        <button class="btn btn-op" data-value='cos' onclick= "display('cos(')">cos</button>			
+                    </td>
+                    <td>
+                        <button class="btn btn-op" data-value='log' onclick= "display('log(')">log</button>				
+                    </td>
+                    <td>
+                        <button class="btn" data-value='4' onclick= "display('4')">4</button>
+                    </td>
+                    <td>
+                        <button class="btn" data-value='5' onclick= "display('5')">5</button>				
+                    </td>
+                    <td>
+                        <button class="btn" data-value='6' onclick= "display('6')">6</button>				
+                    </td>
+                    <td>
+                        <button class="btn btn-op" data-value='*' onclick= "display('*')">×</button>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        <button class="btn btn-op" data-value='e' onclick= "display('e')">e</button>				
+                    </td>
+                    <td>
+                        <button class="btn btn-op" data-value='tan' onclick= "display('tan(')">tan</button>			
+                    </td>
+                    <td>
+                        <button class="btn btn-op" data-value='radic'  onclick= "display('√(')">√</button>				
+                    </td>
+                    <td>
+                        <button class="btn" data-value='1' onclick= "display('1')">1</button>
+                    </td>
+                    <td>
+                        <button class="btn" data-value='2' onclick= "display('2')">2</button>				
+                    </td>
+                    <td>
+                        <button class="btn" data-value='3' onclick= "display('3')">3</button>				
+                    </td>
+                    <td>
+                        <button class="btn btn-op" data-value='-' onclick= "display('-')">-</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn btn-op" data-value='exp' onclick= "display('e^')">e^</button>			
+                    </td>
+                    <td>
+                        <button class="btn btn-op" data-value='x^2' onclick= "display('^2')">x²</button>				
+                    </td>
+                    <td>
+                        <button class="btn btn-op" data-value='**'  onclick= "display('^')">x^</button>		
+                    </td>
+                    <td>
+                        <button class="btn btn-op" data-value='.' onclick= "display('.')">.</button>
+                    </td>
+                    <td>
+                        <button class="btn" data-value='0' onclick= "display('0')">0</button>				
+                    </td>
+                    <td>
+                        <button class="btn btn-op" data-value='=' onclick="calculate()">=</button>				
+                    </td>
+                    <td>
+                        <button class="btn btn-op" data-value='+' onclick= "display('+')">+</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </body>
+</html>
